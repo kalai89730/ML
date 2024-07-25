@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
   <title>ML Project</title>
-  <link rel="stylesheet" href="templates/style.css">
+  <!-- <link rel="stylesheet" href="templates/style.css"> -->
 </head>
+
 <body>
   <div class="container">
     <h1>Salary Prediction</h2>
-      <form method="POST" action="/Predict">
+      <form method="POST" action="/predict">
         <label for="exp">Experience in years:</label>
         <input type="number" name="exp" required>
         <button type="submit">Predict</button>
-      <form>
+        <form>
+          {% if prediction %}
+          <p>Predicted Salary:{{prediction}}</p>
+          {% endif %}
   </div>
-  
+
 </body>
+
 </html>
