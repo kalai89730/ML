@@ -1,5 +1,2 @@
 Flask
 gunicorn
-jupyter notebook
-numpy
-scikit-learn
